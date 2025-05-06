@@ -1,0 +1,210 @@
+{
+  "name": "cosmosdb-index",
+  "defaultScoringProfile": "",
+  "fields": [
+    {
+      "name": "id",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "productId",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "product",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "imageUrl",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "price",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "gender",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "masterCategory",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "subCategory",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "color",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "description",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "syntheticPartitionKey",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "caption",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "occasion_details",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "vector_embedding",
+      "type": "Collection(Edm.Single)",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+       
+      "sortable": false,
+      "facetable": false,
+      "key": false,
+      "dimensions": 1536,
+      "vectorSearchProfile": "vector-profile-1706032526301"
+    },
+    {
+      "name": "rid",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+       
+      "sortable": true,
+      "facetable": true,
+      "key": true,
+      "analyzer": "standard.lucene"
+    }
+  ],
+  "vectorSearch": {
+    "algorithms": [
+      {
+        "name": "vector-config-1706032488800",
+        "kind": "hnsw",
+        "hnswParameters": {
+          "metric": "cosine",
+          "m": 4,
+          "efConstruction": 400,
+          "efSearch": 500
+        }
+      }
+    ],
+    "profiles": [
+      {
+        "name": "vector-profile-1706032526301",
+        "algorithm": "vector-config-1706032488800"
+      }
+    ]
+  },
+  "similarity": {
+    "@odata.type": "#Microsoft.Azure.Search.BM25Similarity"
+  }
+}

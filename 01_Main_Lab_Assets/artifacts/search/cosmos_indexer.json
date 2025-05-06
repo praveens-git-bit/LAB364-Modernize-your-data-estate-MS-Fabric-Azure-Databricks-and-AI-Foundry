@@ -1,0 +1,21 @@
+{
+  "name": "shopping-copilot-indexer",
+  "description": "",
+  "dataSourceName": "shopping-copilot-products",
+  "skillsetName": null,
+  "targetIndexName": "cosmosdb-index",
+  "disabled": null,
+  "schedule": {
+    "interval": "PT1H"
+  },
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": 0,
+    "maxFailedItemsPerBatch": 0,
+    "base64EncodeKeys": false,
+    "configuration": {}
+  },
+  "fieldMappings": [],
+  "outputFieldMappings": [],
+  "encryptionKey": null
+}

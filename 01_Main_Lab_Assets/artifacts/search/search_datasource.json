@@ -1,0 +1,13 @@
+{
+  "name": "#STORAGE_ACCOUNT#",
+  "description": null,
+  "type": "azureblob",
+  "subtype": null,
+  "credentials": {
+    "connectionString": "#STORAGE_CONNECTION#"
+  },
+  "container": {
+    "name": "input",
+    "query": null
+  }
+}

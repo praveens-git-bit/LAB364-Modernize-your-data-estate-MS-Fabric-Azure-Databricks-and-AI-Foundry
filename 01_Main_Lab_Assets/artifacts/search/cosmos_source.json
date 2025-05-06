@@ -1,0 +1,13 @@
+{
+  "name": "shopping-copilot-products",
+  "description": null,
+  "type": "cosmosdb",
+  "subtype": null,
+  "credentials": {
+    "connectionString": "#COSMOSDBSTRING#Database=database"
+  },
+  "container": {
+    "name": "products",
+    "query": null
+  }
+}
